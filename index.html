@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open-source Homepage Headline Generator | FirstClick Fix</title>
+    <meta name="description" content="Generate three homepage headline directions, a supporting line, and a CTA locally in your browser. No login, tracking, or upload.">
+    <link rel="canonical" href="https://elyasibkr.github.io/firstclick-headline-generator/">
+    <link rel="stylesheet" href="./homepage-headline-generator.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="brand" href="https://firstclick-fix.ppjdmpk.chatgpt.site/">FIRSTCLICK <span>FIX</span></a>
+      <a href="https://github.com/ELYASIBKR/firstclick-headline-generator">Source + MIT license</a>
+    </nav>
+
+    <main>
+      <header class="hero">
+        <p class="eyebrow">Free · open source · local only</p>
+        <h1>Make the first screen easier to understand.</h1>
+        <p>Describe the offer in plain language. Get three headline directions, a supporting line, and a primary CTA you can adapt and paste.</p>
+        <ul class="trust" aria-label="Privacy and access terms">
+          <li>No login</li><li>No tracking</li><li>No upload</li><li>MIT licensed</li>
+        </ul>
+      </header>
+
+      <section class="workspace" aria-label="Homepage headline generator">
+        <form id="headline-form">
+          <p class="step">01 / Describe the offer</p>
+          <label>What do you sell?<input name="service" value="wash and fold pickup"></label>
+          <label>Who is it for?<input name="audience" value="busy households"></label>
+          <label>What result do they get?<input name="outcome" value="clean laundry returned by tomorrow"></label>
+          <div class="row">
+            <label>Location or niche <small>optional</small><input name="location" value="North Vancouver"></label>
+            <label>Proof or differentiator <small>optional</small><input name="proof" value="same-day pickup when booked by 10am"></label>
+          </div>
+          <label>What should the visitor do next?<input name="action" value="Book a pickup"></label>
+          <button id="restore" class="restore" type="button">Restore the example</button>
+        </form>
+
+        <section class="output" aria-live="polite">
+          <p class="step">02 / Choose a direction</p>
+          <article><span>Direction 01</span><h2 id="headline-1"></h2><button data-copy="headline-1">Copy headline</button></article>
+          <article><span>Direction 02</span><h2 id="headline-2"></h2><button data-copy="headline-2">Copy headline</button></article>
+          <article><span>Direction 03</span><h2 id="headline-3"></h2><button data-copy="headline-3">Copy headline</button></article>
+          <article><span>Supporting line</span><p id="support"></p><button data-copy="support">Copy supporting line</button></article>
+          <article><span>Primary CTA</span><strong id="cta"></strong><button data-copy="cta">Copy CTA</button></article>
+          <p id="copy-note" role="status"></p>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built by <a href="https://firstclick-fix.ppjdmpk.chatgpt.site/">FirstClick Fix</a>. Runs entirely in this browser.</p>
+      <a href="https://github.com/ELYASIBKR/firstclick-headline-generator">View source and MIT license</a>
+    </footer>
+    <script src="./homepage-headline-generator.js"></script>
+  </body>
+</html>
