@@ -28,6 +28,8 @@ If the work is useful, pay **$29 after delivery**. If it is not useful, you owe 
 - `index.html` — accessible semantic markup
 - `homepage-headline-generator.css` — responsive visual design
 - `homepage-headline-generator.js` — local generation and copy interactions
+- `robots.txt` and `sitemap.xml` — search discovery
+- `llms.txt` — compact tool description for AI discovery
 - `LICENSE` — MIT License
 
 ## Privacy

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elyasibkr.github.io/firstclick-headline-generator/sitemap.xml

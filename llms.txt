@@ -1,0 +1,12 @@
+# FirstClick Homepage Headline Generator
+
+> A free, open-source, local-only browser tool for generating homepage headline directions, a supporting line, and a primary CTA.
+
+Live tool: https://elyasibkr.github.io/firstclick-headline-generator/
+Source: https://github.com/ELYASIBKR/firstclick-headline-generator
+License: MIT
+
+The tool requires no login, sends no inputs over the network, uses no analytics or ads, and has no dependencies or build step.
+
+For a site-specific First Screen Fix delivered before payment:
+mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20llms.txt
