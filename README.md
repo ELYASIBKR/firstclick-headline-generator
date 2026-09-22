@@ -15,6 +15,23 @@ The tool has no dependencies, login, analytics, ads, uploads, network requests, 
 
 To run it locally, download the repository and open `index.html` in a modern browser.
 
+## Example: a local pickup service
+
+Enter `wash and fold pickup` as the service, `busy households` as the audience,
+`clean laundry returned by tomorrow` as the outcome, and `North Vancouver` as
+the location. Add `same-day pickup when booked by 10am` as proof and
+`Book a pickup` as the action. The tool produces these three headline options:
+
+1. Clean laundry returned by tomorrow for busy households.
+2. Wash and fold pickup built for busy households in North Vancouver.
+3. Clean laundry returned by tomorrow—without wasting another day.
+
+It also drafts a supporting line and a **Book a pickup** button. Choose the
+headline that makes the offer clearest to a new visitor. Check every promise
+against what the business can actually deliver, then make sure the button
+leads straight to the booking step. The generated copy is a starting point;
+specific customer language and proof usually need a human edit.
+
 ## Want a human rewrite?
 
 Request a **First Screen Fix** with your public homepage URL and the one action you want visitors to take. You will receive one prioritized diagnosis plus a paste-ready headline, supporting line, and CTA within 24 hours.
