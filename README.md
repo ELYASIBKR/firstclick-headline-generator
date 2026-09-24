@@ -32,6 +32,22 @@ against what the business can actually deliver, then make sure the button
 leads straight to the booking step. The generated copy is a starting point;
 specific customer language and proof usually need a human edit.
 
+## Using it for a Shopify store
+
+Start with one product collection and one buyer need, not the entire catalog. For
+example, a digital invitation shop might enter `editable wedding invitation
+templates` as the product, `couples planning their own wedding` as the audience,
+`a ready-to-send invitation they can personalize` as the outcome, and `Browse
+wedding templates` as the action. Leave the proof field blank unless a claim
+such as a review count or delivery speed can be verified on the store.
+
+After generating copy, check the first screen against the actual purchase path:
+Does the CTA open the promised collection? Can a new visitor tell whether the
+item is digital or physical, how personalization works, and when they receive
+it? A headline cannot repair an unclear product or delivery promise. Use the
+[Shopify Homepage Copy Checklist](https://firstclick-fix.ppjdmpk.chatgpt.site/shopify-homepage-copy-checklist)
+to review those trust and clarity points before publishing the new copy.
+
 ## Want a human rewrite?
 
 Request a **First Screen Fix** with your public homepage URL and the one action you want visitors to take. You will receive one prioritized diagnosis plus a paste-ready headline, supporting line, and CTA within 24 hours.
