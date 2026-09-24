@@ -42,6 +42,9 @@
     document.querySelector("#headline-3").textContent = `${sentence(outcome)}—without wasting another day.`;
     document.querySelector("#support").textContent = `${sentence(service)} for ${audience}${place}. ${proof ? `${sentence(proof)}.` : "A clear next step, without the usual friction."}`;
     document.querySelector("#cta").textContent = `${sentence(action)} →`;
+
+    const requestBody = `Homepage URL:\nThe one action I want visitors to take: ${tidy(draft.action) === example.action ? "" : tidy(draft.action)}\nMy current headline:\n`;
+    document.querySelector("#request-fix").href = `mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20GitHub%20Pages&body=${encodeURIComponent(requestBody)}`;
   }
 
   async function copyResult(button) {
