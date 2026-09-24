@@ -29,6 +29,8 @@ h1 { max-width: 1000px; margin: 0; font-size: clamp(54px, 8.5vw, 108px); line-he
 .human-fix > p:not(.eyebrow) { max-width: 780px; font-size: 18px; line-height: 1.6; }
 .offer-cta { display: inline-block; margin-top: 12px; padding: 14px 18px; background: var(--lime); color: var(--ink); font-weight: 900; text-decoration: none; }
 .offer-cta:hover { background: var(--red); }
+.human-fix > .email-fallback { margin: 20px 0 0; font-size: 15px; }
+.email-fallback a { color: inherit; text-underline-offset: 3px; }
 form, .output { padding: 36px; }
 form { background: var(--lime); }
 .output { background: var(--cream); border-left: 1px solid var(--ink); }
