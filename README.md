@@ -24,7 +24,7 @@ the location. Add `same-day pickup when booked by 10am` as proof and
 
 1. Clean laundry returned by tomorrow for busy households.
 2. Wash and fold pickup built for busy households in North Vancouver.
-3. Clean laundry returned by tomorrow—without wasting another day.
+3. Wash and fold pickup: clean laundry returned by tomorrow.
 
 It also drafts a supporting line and a **Book a pickup** button. Choose the
 headline that makes the offer clearest to a new visitor. Check every promise
