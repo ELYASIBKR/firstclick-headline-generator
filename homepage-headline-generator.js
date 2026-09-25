@@ -55,9 +55,27 @@
       const original = button.textContent;
       button.textContent = "Copied";
       note.textContent = "";
+      note.dataset.state = "success";
       window.setTimeout(() => { button.textContent = original; }, 1600);
     } catch {
       note.textContent = "Select the result text and copy it manually.";
+      note.dataset.state = "error";
+    }
+  }
+
+  async function copyDraft() {
+    const direction = document.querySelector("#draft-headline").value;
+    const headline = document.querySelector(`#headline-${direction}`).textContent;
+    const support = document.querySelector("#support").textContent;
+    const cta = document.querySelector("#cta").textContent.replace(/\s+→$/, "");
+    const draft = `Headline: ${headline}\nSupporting line: ${support}\nCTA: ${cta}`;
+    try {
+      await navigator.clipboard.writeText(draft);
+      note.textContent = "Full first-screen draft copied.";
+      note.dataset.state = "success";
+    } catch {
+      note.textContent = "Copy failed. Select the headline, supporting line, and CTA text to copy manually.";
+      note.dataset.state = "error";
     }
   }
 
@@ -70,6 +88,7 @@
   document.querySelectorAll("[data-copy]").forEach(button => {
     button.addEventListener("click", () => copyResult(button));
   });
+  document.querySelector("#copy-draft").addEventListener("click", copyDraft);
 
   render();
 })();

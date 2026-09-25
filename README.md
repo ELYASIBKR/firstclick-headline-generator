@@ -7,6 +7,9 @@ A small, local-only browser tool that turns six plain-language inputs into:
 - a primary call to action.
 
 The tool has no dependencies, login, analytics, ads, uploads, network requests, or build step. It runs entirely in the browser.
+Choose one headline direction and use **Copy headline + supporting line + CTA**
+to paste a complete first-screen draft in one step. The clipboard action runs
+only when you click it.
 
 ## Use it
 

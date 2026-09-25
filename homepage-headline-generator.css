@@ -36,8 +36,8 @@ form { background: var(--lime); }
 .output { background: var(--cream); border-left: 1px solid var(--ink); }
 label { display: grid; gap: 7px; margin-bottom: 18px; font-size: 13px; font-weight: 800; }
 small { font-weight: 400; opacity: .65; }
-input { width: 100%; border: 1px solid var(--ink); border-radius: 0; background: var(--paper); padding: 13px; font: inherit; }
-input:focus { outline: 3px solid var(--red); outline-offset: 2px; }
+input, select { width: 100%; border: 1px solid var(--ink); border-radius: 0; background: var(--paper); padding: 13px; font: inherit; }
+input:focus, select:focus, .draft-export button:focus { outline: 3px solid var(--red); outline-offset: 2px; }
 .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .restore { border: 0; border-bottom: 1px solid var(--ink); background: transparent; padding: 4px 0; font-weight: 800; cursor: pointer; }
 article { position: relative; border-top: 1px solid var(--ink); padding: 24px 128px 24px 0; min-height: 125px; }
@@ -46,7 +46,12 @@ article p { margin: 11px 0 0; line-height: 1.55; }
 article strong { display: inline-block; margin-top: 12px; background: var(--ink); color: var(--lime); padding: 10px 13px; }
 article button { position: absolute; top: 23px; right: 0; border: 1px solid var(--ink); background: var(--paper); padding: 8px 10px; font-family: ui-monospace, monospace; font-size: 8px; font-weight: 700; text-transform: uppercase; cursor: pointer; }
 article button:hover { background: var(--ink); color: var(--paper); }
-#copy-note { min-height: 20px; color: var(--red); font-size: 12px; }
+.draft-export { border-top: 1px solid var(--ink); padding-top: 24px; }
+.draft-export label { margin-bottom: 10px; }
+.draft-export button { border: 1px solid var(--ink); background: var(--ink); color: var(--paper); padding: 12px 14px; font-weight: 800; cursor: pointer; }
+.draft-export button:hover { background: var(--paper); color: var(--ink); }
+#copy-note { min-height: 20px; color: var(--ink); font-size: 12px; }
+#copy-note[data-state="error"] { color: var(--red); }
 .result-nudge { margin: 16px 0 0; padding: 16px; border: 1px solid var(--ink); background: var(--paper); font-size: 13px; line-height: 1.5; }
 .result-nudge a { display: block; margin-top: 8px; font-weight: 800; text-underline-offset: 3px; }
 footer { min-height: 110px; display: flex; justify-content: space-between; align-items: center; gap: 24px; border-top: 1px solid var(--ink); font-size: 13px; }
