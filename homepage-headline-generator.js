@@ -40,7 +40,7 @@
     document.querySelector("#headline-1").textContent = `${sentence(outcome)} for ${audience}.`;
     document.querySelector("#headline-2").textContent = `${sentence(service)} built for ${audience}${place}.`;
     document.querySelector("#headline-3").textContent = `${sentence(service)}: ${outcome}.`;
-    document.querySelector("#support").textContent = `${sentence(service)} for ${audience}${place}. ${proof ? `${sentence(proof)}.` : "A clear next step, without the usual friction."}`;
+    document.querySelector("#support").textContent = `${sentence(service)} for ${audience}${place}. ${proof ? `${sentence(proof)}.` : `The goal: ${outcome}.`}`;
     document.querySelector("#cta").textContent = `${sentence(action)} →`;
 
     const requestBody = `Homepage URL:\nThe one action I want visitors to take: ${tidy(draft.action) === example.action ? "" : tidy(draft.action)}\nMy current headline:\n`;

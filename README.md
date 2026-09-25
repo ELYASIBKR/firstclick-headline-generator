@@ -26,9 +26,11 @@ the location. Add `same-day pickup when booked by 10am` as proof and
 2. Wash and fold pickup built for busy households in North Vancouver.
 3. Wash and fold pickup: clean laundry returned by tomorrow.
 
-It also drafts a supporting line and a **Book a pickup** button. Choose the
-headline that makes the offer clearest to a new visitor. Check every promise
-against what the business can actually deliver, then make sure the button
+It also drafts a supporting line and a **Book a pickup** button. If you leave
+the optional proof field blank, it uses your stated outcome instead of
+inventing a differentiator. Choose the headline that makes the offer clearest
+to a new visitor. Check every promise against what the business can actually
+deliver, then make sure the button
 leads straight to the booking step. The generated copy is a starting point;
 specific customer language and proof usually need a human edit.
 
