@@ -16,6 +16,10 @@ only when you click it.
 - Live standalone tool: https://elyasibkr.github.io/firstclick-headline-generator/
 - FirstClick Fix version: https://firstclick-fix.ppjdmpk.chatgpt.site/open-source/homepage-headline-generator.html
 
+![Generator showing fictional printable-meal-planner inputs, three headline directions, a supporting line, and a CTA](assets/generator-store-example.png)
+
+The screenshot uses a fictional store example; it is not a client result or a performance claim.
+
 To run it locally, download the repository and open `index.html` in a modern browser.
 
 ## Example: a local pickup service
