@@ -48,6 +48,21 @@ it? A headline cannot repair an unclear product or delivery promise. Use the
 [Shopify Homepage Copy Checklist](https://firstclick-fix.ppjdmpk.chatgpt.site/shopify-homepage-copy-checklist)
 to review those trust and clarity points before publishing the new copy.
 
+For that fictional store, a first-screen draft could look like this:
+
+> **Headline:** Editable wedding invitations you can personalize yourself
+>
+> **Supporting line:** Choose a template, update the names and event details,
+> and see exactly what you will receive before checkout.
+>
+> **CTA:** Browse wedding templates
+
+This is an illustration, not a claim about a real shop. The headline names the
+product and who controls the edit; the supporting line answers a likely buyer
+question; and the CTA names the collection it should open. Replace any detail
+that the actual product page cannot verify, especially file format, delivery
+timing, and what customization is included.
+
 ## Want a human rewrite?
 
 Request a **First Screen Fix** with your public homepage URL and the one action you want visitors to take. You will receive one prioritized diagnosis plus a paste-ready headline, supporting line, and CTA within 24 hours.
