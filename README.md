@@ -52,6 +52,9 @@ item is digital or physical, how personalization works, and when they receive
 it? A headline cannot repair an unclear product or delivery promise. Use the
 [Shopify Homepage Copy Checklist](https://firstclick-fix.ppjdmpk.chatgpt.site/shopify-homepage-copy-checklist)
 to review those trust and clarity points before publishing the new copy.
+For three different product categories, see the
+[fictional Shopify hero-copy examples](https://elyasibkr.github.io/firstclick-headline-generator/shopify-hero-copy-examples.html)
+with headline, supporting line, CTA, and a brief explanation of each pattern.
 
 For that fictional store, a first-screen draft could look like this:
 
@@ -79,6 +82,7 @@ If the work is useful, pay **$29 after delivery**. If it is not useful, you owe 
 ## Files
 
 - `index.html` — accessible semantic markup
+- `shopify-hero-copy-examples.html` — fictional store examples and adaptation guidance
 - `homepage-headline-generator.css` — responsive visual design
 - `homepage-headline-generator.js` — local generation and copy interactions
 - `robots.txt` and `sitemap.xml` — search discovery
