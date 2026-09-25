@@ -84,6 +84,11 @@
 
   form.addEventListener("input", render);
   form.addEventListener("submit", event => event.preventDefault());
+  document.querySelector("#clear").addEventListener("click", () => {
+    form.querySelectorAll("input").forEach(input => { input.value = ""; });
+    render();
+    form.elements.service.focus();
+  });
   document.querySelector("#restore").addEventListener("click", () => {
     Object.entries(example).forEach(([name, value]) => { form.elements[name].value = value; });
     render();

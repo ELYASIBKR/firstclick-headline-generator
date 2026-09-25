@@ -43,7 +43,9 @@ small { font-weight: 400; opacity: .65; }
 input, select { width: 100%; border: 1px solid var(--ink); border-radius: 0; background: var(--paper); padding: 13px; font: inherit; }
 input:focus, select:focus, .draft-export button:focus { outline: 3px solid var(--red); outline-offset: 2px; }
 .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-actions { display: flex; flex-wrap: wrap; gap: 12px 22px; }
 .restore { border: 0; border-bottom: 1px solid var(--ink); background: transparent; padding: 4px 0; font-weight: 800; cursor: pointer; }
+.restore:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
 article { position: relative; border-top: 1px solid var(--ink); padding: 24px 128px 24px 0; min-height: 125px; }
 article h2 { margin: 10px 0 0; font-size: clamp(25px, 3vw, 39px); line-height: 1.02; letter-spacing: -.04em; }
 article p { margin: 11px 0 0; line-height: 1.55; }
