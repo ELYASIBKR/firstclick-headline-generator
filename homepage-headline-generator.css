@@ -52,10 +52,13 @@ article p { margin: 11px 0 0; line-height: 1.55; }
 article strong { display: inline-block; margin-top: 12px; background: var(--ink); color: var(--lime); padding: 10px 13px; }
 article button { position: absolute; top: 23px; right: 0; border: 1px solid var(--ink); background: var(--paper); padding: 8px 10px; font-family: ui-monospace, monospace; font-size: 8px; font-weight: 700; text-transform: uppercase; cursor: pointer; }
 article button:hover { background: var(--ink); color: var(--paper); }
+article button:disabled, .draft-export button:disabled { opacity: .45; cursor: not-allowed; }
+article button:disabled:hover { background: var(--paper); color: var(--ink); }
 .draft-export { border-top: 1px solid var(--ink); padding-top: 24px; }
 .draft-export label { margin-bottom: 10px; }
 .draft-export button { border: 1px solid var(--ink); background: var(--ink); color: var(--paper); padding: 12px 14px; font-weight: 800; cursor: pointer; }
 .draft-export button:hover { background: var(--paper); color: var(--ink); }
+.draft-export button:disabled:hover { background: var(--ink); color: var(--paper); }
 #copy-note { min-height: 20px; color: var(--ink); font-size: 12px; }
 #copy-note[data-state="error"] { color: var(--red); }
 .result-nudge { margin: 16px 0 0; padding: 16px; border: 1px solid var(--ink); background: var(--paper); font-size: 13px; line-height: 1.5; }

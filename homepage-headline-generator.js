@@ -29,6 +29,19 @@
 
   function render() {
     const draft = values();
+    const ready = ["service", "audience", "outcome"].every(name => tidy(draft[name] || ""));
+    document.querySelectorAll("[data-copy], #copy-draft").forEach(button => { button.disabled = !ready; });
+    if (!ready) {
+      ["headline-1", "headline-2", "headline-3", "support", "cta"].forEach(id => {
+        document.getElementById(id).textContent = "";
+      });
+      document.querySelector("#headline-1").textContent = "Add your offer, audience, and result to begin.";
+      note.textContent = "Add what you sell, who it is for, and the result to see your drafts.";
+      note.dataset.state = "hint";
+    } else {
+      note.textContent = "";
+      note.dataset.state = "";
+    }
     const service = tidy(draft.service) || "your service";
     const audience = tidy(draft.audience) || "the people you serve";
     const outcome = tidy(draft.outcome) || "the result they want";
@@ -37,11 +50,13 @@
     const action = tidy(draft.action) || "Get started";
     const place = location ? ` in ${location}` : "";
 
-    document.querySelector("#headline-1").textContent = `${sentence(outcome)} for ${audience}.`;
-    document.querySelector("#headline-2").textContent = `${sentence(service)} built for ${audience}${place}.`;
-    document.querySelector("#headline-3").textContent = `${sentence(service)}: ${outcome}.`;
-    document.querySelector("#support").textContent = `${sentence(service)} for ${audience}${place}. ${proof ? `${sentence(proof)}.` : `The goal: ${outcome}.`}`;
-    document.querySelector("#cta").textContent = `${sentence(action)} →`;
+    if (ready) {
+      document.querySelector("#headline-1").textContent = `${sentence(outcome)} for ${audience}.`;
+      document.querySelector("#headline-2").textContent = `${sentence(service)} built for ${audience}${place}.`;
+      document.querySelector("#headline-3").textContent = `${sentence(service)}: ${outcome}.`;
+      document.querySelector("#support").textContent = `${sentence(service)} for ${audience}${place}. ${proof ? `${sentence(proof)}.` : `The goal: ${outcome}.`}`;
+      document.querySelector("#cta").textContent = `${sentence(action)} →`;
+    }
 
     const requestBody = `Homepage URL:\nThe one action I want visitors to take: ${tidy(draft.action) === example.action ? "" : tidy(draft.action)}\nMy current headline:\n`;
     document.querySelector("#request-fix").href = `mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20GitHub%20Pages&body=${encodeURIComponent(requestBody)}`;
