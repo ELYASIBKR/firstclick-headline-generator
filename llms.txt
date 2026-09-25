@@ -6,6 +6,7 @@ Live tool: https://elyasibkr.github.io/firstclick-headline-generator/
 Source: https://github.com/ELYASIBKR/firstclick-headline-generator
 License: MIT
 Shopify hero copy examples: https://elyasibkr.github.io/firstclick-headline-generator/shopify-hero-copy-examples.html
+Shopify homepage CTA examples: https://elyasibkr.github.io/firstclick-headline-generator/shopify-homepage-cta-examples.html
 Service-business homepage examples: https://elyasibkr.github.io/firstclick-headline-generator/service-business-homepage-examples.html
 Illustrative First Screen Fix deliverable: https://elyasibkr.github.io/firstclick-headline-generator/first-screen-fix-sample.html
 Optional self-guided DIY kit preview (three workbook pages before a $29 purchase): https://firstclick-fix.ppjdmpk.chatgpt.site/firstclick-diy-kit-preview.pdf
