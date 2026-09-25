@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FirstClick Fix">
+  <rect width="64" height="64" rx="12" fill="#111310"/>
+  <path d="M17 14h31v9H28v9h16v9H28v12H17z" fill="#d7ff3f"/>
+  <circle cx="50" cy="14" r="6" fill="#ff5c45"/>
+</svg>
