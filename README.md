@@ -87,6 +87,8 @@ If the work is useful, pay **$29 after delivery**. If it is not useful, you owe 
 
 Not ready for a full rewrite? [Ask for one free homepage finding](mailto:ppjdmpk@gmail.com?subject=One%20free%20homepage%20finding%20from%20GitHub%20README&body=Homepage%20URL%3A%20%0AThe%20one%20action%20I%20want%20visitors%20to%20take%3A%20) with your public URL and desired visitor action. It is one observation, not a full audit, with no obligation to buy.
 
+Prefer to work on the copy yourself? The [FirstClick DIY kit preview](https://firstclick-fix.ppjdmpk.chatgpt.site/firstclick-diy-kit-preview.pdf) shows three real workbook pages plus a purchase page before you decide on the $29 full kit. This open-source generator remains free.
+
 ## Files
 
 - `index.html` — accessible semantic markup
