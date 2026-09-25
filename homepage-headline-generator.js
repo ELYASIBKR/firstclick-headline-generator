@@ -10,6 +10,14 @@
     proof: "same-day pickup when booked by 10am",
     action: "Book a pickup",
   };
+  const storeExample = {
+    service: "printable meal planner",
+    audience: "busy families",
+    outcome: "a simpler weekly meal plan",
+    location: "",
+    proof: "",
+    action: "See the planner",
+  };
 
   const form = document.querySelector("#headline-form");
   const note = document.querySelector("#copy-note");
@@ -25,6 +33,10 @@
 
   function values() {
     return Object.fromEntries(new FormData(form).entries());
+  }
+
+  function isExampleValue(name, value) {
+    return [example, storeExample].some(sample => tidy(value) === sample[name]);
   }
 
   function render() {
@@ -58,10 +70,10 @@
       document.querySelector("#cta").textContent = `${sentence(action)} →`;
     }
 
-    const requestBody = `Homepage URL:\nThe one action I want visitors to take: ${tidy(draft.action) === example.action ? "" : tidy(draft.action)}\nMy current headline:\n`;
+    const requestBody = `Homepage URL:\nThe one action I want visitors to take: ${isExampleValue("action", draft.action) ? "" : tidy(draft.action)}\nMy current headline:\n`;
     document.querySelector("#request-fix").href = `mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20GitHub%20Pages&body=${encodeURIComponent(requestBody)}`;
 
-    const freeFindingBody = `Homepage URL:\nThe one action I want visitors to take: ${tidy(draft.action) === example.action ? "" : tidy(draft.action)}\nWhat I sell: ${tidy(draft.service) === example.service ? "" : tidy(draft.service)}\n`;
+    const freeFindingBody = `Homepage URL:\nThe one action I want visitors to take: ${isExampleValue("action", draft.action) ? "" : tidy(draft.action)}\nWhat I sell: ${isExampleValue("service", draft.service) ? "" : tidy(draft.service)}\n`;
     document.querySelector("#request-free-finding").href = `mailto:ppjdmpk@gmail.com?subject=One%20free%20homepage%20finding%20from%20GitHub%20Pages&body=${encodeURIComponent(freeFindingBody)}`;
   }
 
@@ -106,6 +118,10 @@
   });
   document.querySelector("#restore").addEventListener("click", () => {
     Object.entries(example).forEach(([name, value]) => { form.elements[name].value = value; });
+    render();
+  });
+  document.querySelector("#store-example").addEventListener("click", () => {
+    Object.entries(storeExample).forEach(([name, value]) => { form.elements[name].value = value; });
     render();
   });
   document.querySelectorAll("[data-copy]").forEach(button => {
