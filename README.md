@@ -79,6 +79,8 @@ timing, and what customization is included.
 
 Request a **First Screen Fix** with your public homepage URL and the one action you want visitors to take. You will receive one prioritized diagnosis plus a paste-ready headline, supporting line, and CTA within 24 hours.
 
+See an [illustrative First Screen Fix deliverable](https://elyasibkr.github.io/firstclick-headline-generator/first-screen-fix-sample.html) for the exact diagnosis, draft, and verification-check format. The example is fictional, not a measured result or a real client audit.
+
 If the work is useful, pay **$29 after delivery**. If it is not useful, you owe nothing.
 
 [Request a First Screen Fix by email](mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20GitHub%20README&body=Homepage%20URL%3A%20%0AThe%20one%20action%20I%20want%20visitors%20to%20take%3A%20%0AMy%20current%20headline%3A%20)
@@ -88,6 +90,7 @@ If the work is useful, pay **$29 after delivery**. If it is not useful, you owe 
 - `index.html` — accessible semantic markup
 - `shopify-hero-copy-examples.html` — fictional store examples and adaptation guidance
 - `service-business-homepage-examples.html` — fictional local-service examples and adaptation guidance
+- `first-screen-fix-sample.html` — fictional work-first deliverable preview
 - `homepage-headline-generator.css` — responsive visual design
 - `homepage-headline-generator.js` — local generation and copy interactions
 - `robots.txt` and `sitemap.xml` — search discovery
