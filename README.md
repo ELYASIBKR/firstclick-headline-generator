@@ -43,6 +43,10 @@ lines, CTAs, and claim-checking notes, see the
 
 ## Using it for a Shopify store
 
+The live tool's **Try a store example** button shows how a fictional product
+becomes three headline directions, a supporting line, and a CTA. Clear that
+example before entering your own product details.
+
 Start with one product collection and one buyer need, not the entire catalog. For
 example, a digital invitation shop might enter `editable wedding invitation
 templates` as the product, `couples planning their own wedding` as the audience,
@@ -88,6 +92,8 @@ If the work is useful, pay **$29 after delivery**. If it is not useful, you owe 
 Not ready for a full rewrite? [Ask for one free homepage finding](mailto:ppjdmpk@gmail.com?subject=One%20free%20homepage%20finding%20from%20GitHub%20README&body=Homepage%20URL%3A%20%0AThe%20one%20action%20I%20want%20visitors%20to%20take%3A%20) with your public URL and desired visitor action. It is one observation, not a full audit, with no obligation to buy.
 
 Prefer to work on the copy yourself? The [FirstClick DIY kit preview](https://firstclick-fix.ppjdmpk.chatgpt.site/firstclick-diy-kit-preview.pdf) shows three real workbook pages plus a purchase page before you decide on the $29 full kit. This open-source generator remains free.
+
+Need the whole homepage reviewed rather than only its first screen? [See the $59 teardown deliverables and guarantee](https://firstclick-fix.ppjdmpk.chatgpt.site/#checkout) before deciding.
 
 ## Files
 
