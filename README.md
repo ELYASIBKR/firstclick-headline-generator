@@ -37,6 +37,10 @@ deliver, then make sure the button
 leads straight to the booking step. The generated copy is a starting point;
 specific customer language and proof usually need a human edit.
 
+For three fictional service-business first screens with headlines, supporting
+lines, CTAs, and claim-checking notes, see the
+[service-business homepage examples](https://elyasibkr.github.io/firstclick-headline-generator/service-business-homepage-examples.html).
+
 ## Using it for a Shopify store
 
 Start with one product collection and one buyer need, not the entire catalog. For
@@ -83,6 +87,7 @@ If the work is useful, pay **$29 after delivery**. If it is not useful, you owe 
 
 - `index.html` — accessible semantic markup
 - `shopify-hero-copy-examples.html` — fictional store examples and adaptation guidance
+- `service-business-homepage-examples.html` — fictional local-service examples and adaptation guidance
 - `homepage-headline-generator.css` — responsive visual design
 - `homepage-headline-generator.js` — local generation and copy interactions
 - `robots.txt` and `sitemap.xml` — search discovery
