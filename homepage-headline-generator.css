@@ -38,6 +38,7 @@ h1 { max-width: 1000px; margin: 0; font-size: clamp(54px, 8.5vw, 108px); line-he
 form, .output { padding: 36px; }
 form { background: var(--lime); }
 .output { background: var(--cream); border-left: 1px solid var(--ink); }
+.direction-guide { margin: 0 0 16px; font-size: 13px; line-height: 1.5; }
 label { display: grid; gap: 7px; margin-bottom: 18px; font-size: 13px; font-weight: 800; }
 small { font-weight: 400; opacity: .65; }
 input, select { width: 100%; border: 1px solid var(--ink); border-radius: 0; background: var(--paper); padding: 13px; font: inherit; }
