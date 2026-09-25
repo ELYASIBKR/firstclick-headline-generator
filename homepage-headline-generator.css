@@ -61,6 +61,9 @@ article button:disabled:hover { background: var(--paper); color: var(--ink); }
 .draft-export button:disabled:hover { background: var(--ink); color: var(--paper); }
 #copy-note { min-height: 20px; color: var(--ink); font-size: 12px; }
 #copy-note[data-state="error"] { color: var(--red); }
+.draft-check { margin-top: 16px; padding: 16px; border: 1px solid var(--ink); background: var(--paper); }
+.draft-check h3 { margin: 0 0 8px; font-size: 15px; }
+.draft-check ol { margin: 0; padding-left: 20px; font-size: 13px; line-height: 1.6; }
 .result-nudge { margin: 16px 0 0; padding: 16px; border: 1px solid var(--ink); background: var(--paper); font-size: 13px; line-height: 1.5; }
 .result-nudge a { display: block; margin-top: 8px; font-weight: 800; text-underline-offset: 3px; }
 footer { min-height: 110px; display: flex; justify-content: space-between; align-items: center; gap: 24px; border-top: 1px solid var(--ink); font-size: 13px; }
