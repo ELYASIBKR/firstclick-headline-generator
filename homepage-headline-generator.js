@@ -45,6 +45,9 @@
 
     const requestBody = `Homepage URL:\nThe one action I want visitors to take: ${tidy(draft.action) === example.action ? "" : tidy(draft.action)}\nMy current headline:\n`;
     document.querySelector("#request-fix").href = `mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20GitHub%20Pages&body=${encodeURIComponent(requestBody)}`;
+
+    const freeFindingBody = `Homepage URL:\nThe one action I want visitors to take: ${tidy(draft.action) === example.action ? "" : tidy(draft.action)}\nWhat I sell: ${tidy(draft.service) === example.service ? "" : tidy(draft.service)}\n`;
+    document.querySelector("#request-free-finding").href = `mailto:ppjdmpk@gmail.com?subject=One%20free%20homepage%20finding%20from%20GitHub%20Pages&body=${encodeURIComponent(freeFindingBody)}`;
   }
 
   async function copyResult(button) {
