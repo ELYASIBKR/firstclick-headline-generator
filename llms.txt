@@ -11,10 +11,12 @@ Service-business homepage examples: https://elyasibkr.github.io/firstclick-headl
 Illustrative First Screen Fix deliverable: https://elyasibkr.github.io/firstclick-headline-generator/first-screen-fix-sample.html
 Optional self-guided DIY kit preview (three workbook pages before a $29 purchase): https://firstclick-fix.ppjdmpk.chatgpt.site/firstclick-diy-kit-preview.pdf
 
-The tool requires no login, sends no inputs over the network, uses no analytics or ads, and has no dependencies or build step.
+Draft generation runs locally without login, analytics, ads, dependencies, or a build step. Optional request buttons open email drafts for visitors to review and send; sending an email shares those details with FirstClick Fix. The page sends nothing automatically.
 
 For one free, site-specific homepage finding with no purchase obligation, send your homepage URL and the action you want visitors to take:
 mailto:ppjdmpk@gmail.com?subject=One%20free%20homepage%20finding%20from%20llms.txt&body=Homepage%20URL%3A%20%0ADesired%20visitor%20action%3A%20
 
-For a site-specific First Screen Fix delivered before payment:
-mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20llms.txt
+For a site-specific First Screen Fix: receive one diagnosis plus a paste-ready headline, supporting line, and CTA within 24 hours. Pay $29 after delivery only if useful; otherwise owe nothing. No website implementation, login access, or meeting is included or required. Send only your public homepage URL and desired visitor action:
+mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20llms.txt&body=Homepage%20URL%3A%20%0ADesired%20visitor%20action%3A%20%0A
+
+CTA destination worksheet (free; includes copyable notes and optional reviewable email requests): https://elyasibkr.github.io/firstclick-headline-generator/shopify-homepage-cta-examples.html#worksheet-title
