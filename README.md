@@ -120,7 +120,9 @@ Need the whole homepage reviewed rather than only its first screen? [See the $59
 
 ## Privacy
 
-Inputs never leave the browser. The project includes no analytics, cookies, third-party scripts, or external API calls.
+Generating drafts happens locally; the project includes no analytics, cookies, third-party scripts, or external API calls. Optional human-review buttons open email drafts containing the details you provide. Review the draft before sending: sending it shares those details with FirstClick Fix through your email provider. Nothing is sent automatically by the page.
+
+For human review, share only your public homepage URL, desired visitor action, and relevant copy notes. No store login, customer records, or payment details are needed.
 
 ## License
 
