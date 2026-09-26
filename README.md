@@ -13,6 +13,10 @@ only when you click it.
 
 ## Use it
 
+**Start here:** [Open the free generator](https://elyasibkr.github.io/firstclick-headline-generator/)
+· [Compare free and paid help](#which-kind-of-help-fits)
+· [Copy a request brief for webmail](#if-the-email-button-does-not-open-your-mail-app)
+
 - Live standalone tool: https://elyasibkr.github.io/firstclick-headline-generator/
 - FirstClick Fix version: https://firstclick-fix.ppjdmpk.chatgpt.site/open-source/homepage-headline-generator.html
 
