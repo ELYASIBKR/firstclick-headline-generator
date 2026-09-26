@@ -116,11 +116,11 @@ Need the whole homepage reviewed rather than only its first screen? [See the $59
 
 | Your next step | What you receive | Cost and timing |
 | --- | --- | --- |
-| Draft it yourself | Three headline directions, supporting line and CTA from this browser tool | Free; available now |
-| Check one concern | One observation about your public homepage | Free; no purchase obligation |
-| Get a first-screen rewrite | One diagnosis and replacement headline, supporting line and CTA by email | $29 after delivery, only if useful; delivered within 24 hours |
-| Work through the whole page yourself | The 13-page DIY workbook; inspect the linked preview first | $29 upfront; download after payment |
-| Get the whole homepage reviewed | 12 ranked findings, annotated screenshots, hero rewrite and two-pass plan | $59 upfront; delivered within 24 hours, subject to the linked guarantee |
+| [Draft it yourself](https://elyasibkr.github.io/firstclick-headline-generator/) | Three headline directions, supporting line and CTA from this browser tool | Free; available now |
+| [Check one concern](https://elyasibkr.github.io/firstclick-headline-generator/#free-finding-title) | One observation about your public homepage | Free; no purchase obligation |
+| [Get a first-screen rewrite](https://elyasibkr.github.io/firstclick-headline-generator/first-screen-fix-sample.html#next-title) | One diagnosis and replacement headline, supporting line and CTA by email | $29 after delivery, only if useful; delivered within 24 hours |
+| [Work through the whole page yourself](https://firstclick-fix.ppjdmpk.chatgpt.site/firstclick-diy-kit-preview.pdf) | The 13-page DIY workbook; inspect the linked preview first | $29 upfront; download after payment |
+| [Get the whole homepage reviewed](https://firstclick-fix.ppjdmpk.chatgpt.site/#checkout) | 12 ranked findings, annotated screenshots, hero rewrite and two-pass plan | $59 upfront; delivered within 24 hours, subject to the linked guarantee |
 
 These options do not include logging into or implementing changes on your website.
 
