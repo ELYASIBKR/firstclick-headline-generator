@@ -7,6 +7,7 @@
   <title>Shopify Homepage CTA Examples: Match the Button to the Next Step | FirstClick Fix</title>
   <meta name="description" content="Five practical Shopify homepage CTA examples and a free button-to-destination worksheet. Test the next step on a phone before publishing.">
   <link rel="canonical" href="https://elyasibkr.github.io/firstclick-headline-generator/shopify-homepage-cta-examples.html">
+  <script src="./shopify-cta-request.js" defer></script>
   <style>
     :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18312c;background:#f7f7f2;line-height:1.55}
     *{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:1.25rem}header{display:flex;justify-content:space-between;gap:1rem;align-items:center}a{color:#126353}a:focus-visible{outline:3px solid #126353;outline-offset:3px}main{padding-top:2.5rem;padding-bottom:4rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;max-width:19ch}h2{line-height:1.2}article,.next,.check,.worksheet{background:white;border:1px solid #d8e2db;border-radius:14px;padding:1.5rem;margin:1.5rem 0}article h3{font-size:1.45rem;line-height:1.2;margin:.5rem 0}.label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#517368}.note{color:#425d55}.next{background:#e9f3ec}.worksheet label{display:block;font-weight:700;margin:1rem 0}.worksheet input,.worksheet textarea{display:block;width:100%;font:inherit;color:inherit;background:#fff;border:1px solid #8ba99d;border-radius:6px;padding:.7rem;margin-top:.35rem}.worksheet textarea{min-height:5rem;resize:vertical}.button{display:inline-block;background:#126353;color:white;padding:.8rem 1rem;border-radius:7px;text-decoration:none;font-weight:700}.button:hover{background:#0b493d}footer{border-top:1px solid #d8e2db;color:#425d55}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}}
@@ -67,6 +68,12 @@
     <p class="label">Apply the examples to your store</p>
     <h2 id="worksheet-title">Map your button to its destination.</h2>
     <p>Use this small worksheet for your main homepage CTA. Nothing here is submitted or saved by this page. Open the destination on a phone while you fill it in.</p>
+    <label for="cta-homepage">Your public homepage URL
+      <input id="cta-homepage" type="url" autocomplete="url" placeholder="https://your-store.example/">
+    </label>
+    <label for="cta-goal">The one action you want visitors to take
+      <input id="cta-goal" type="text" autocomplete="off" placeholder="e.g. Browse cleaning refills">
+    </label>
     <label for="cta-current">What does the homepage button say now?
       <input id="cta-current" type="text" autocomplete="off" placeholder="e.g. Shop cleaning refills">
     </label>
@@ -80,6 +87,9 @@
       <textarea id="cta-mismatch" placeholder="Change the button wording, its destination, or the destination's first screen."></textarea>
     </label>
     <p class="note">If the destination is correct but the wording is vague, name the actual next step. If the wording is specific but the destination cannot deliver it, change the page or choose a truthful button. Check live price, availability, and shipping terms separately.</p>
+    <button class="button" id="cta-email-request" type="button">Ask for one free finding using these notes</button>
+    <p id="cta-email-status" role="status" aria-live="polite"></p>
+    <p class="note">This opens a draft in your email app for you to review and send; it does not send automatically. If no email app opens, email <a href="mailto:ppjdmpk@gmail.com">ppjdmpk@gmail.com</a> with “One free homepage finding” in the subject and your homepage URL, desired action, and CTA notes.</p>
   </section>
   <section class="next" aria-labelledby="next-title">
     <h2 id="next-title">Get a second set of eyes on your real homepage.</h2>

@@ -70,7 +70,8 @@ with headline, supporting line, CTA, and a brief explanation of each pattern.
 For button wording and destination checks, use the
 [Shopify homepage CTA examples](https://elyasibkr.github.io/firstclick-headline-generator/shopify-homepage-cta-examples.html).
 That page also includes a browser-local worksheet for comparing a button's wording
-with the first thing shoppers see after clicking it.
+with the first thing shoppers see after clicking it. Visitors can open a prefilled
+email draft from their notes to request one free finding; the page sends nothing.
 
 For that fictional store, a first-screen draft could look like this:
 
@@ -108,6 +109,7 @@ Need the whole homepage reviewed rather than only its first screen? [See the $59
 - `index.html` — accessible semantic markup
 - `shopify-hero-copy-examples.html` — fictional store examples and adaptation guidance
 - `shopify-homepage-cta-examples.html` — CTA wording, destination examples, and a browser-local worksheet
+- `shopify-cta-request.js` — optional local email-draft handoff from worksheet notes
 - `service-business-homepage-examples.html` — fictional local-service examples and adaptation guidance
 - `first-screen-fix-sample.html` — fictional work-first deliverable preview
 - `homepage-headline-generator.css` — responsive visual design
