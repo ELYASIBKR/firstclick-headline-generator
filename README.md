@@ -112,6 +112,18 @@ Prefer to work on the copy yourself? The [FirstClick DIY kit preview](https://fi
 
 Need the whole homepage reviewed rather than only its first screen? [See the $59 teardown deliverables and guarantee](https://firstclick-fix.ppjdmpk.chatgpt.site/#checkout) before deciding.
 
+### Which kind of help fits?
+
+| Your next step | What you receive | Cost and timing |
+| --- | --- | --- |
+| Draft it yourself | Three headline directions, supporting line and CTA from this browser tool | Free; available now |
+| Check one concern | One observation about your public homepage | Free; no purchase obligation |
+| Get a first-screen rewrite | One diagnosis and replacement headline, supporting line and CTA by email | $29 after delivery, only if useful; delivered within 24 hours |
+| Work through the whole page yourself | The 13-page DIY workbook; inspect the linked preview first | $29 upfront; download after payment |
+| Get the whole homepage reviewed | 12 ranked findings, annotated screenshots, hero rewrite and two-pass plan | $59 upfront; delivered within 24 hours, subject to the linked guarantee |
+
+These options do not include logging into or implementing changes on your website.
+
 ### If the email button does not open your mail app
 
 Copy this brief into your usual email provider and send it to **ppjdmpk@gmail.com**.
