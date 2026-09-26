@@ -112,6 +112,26 @@ Prefer to work on the copy yourself? The [FirstClick DIY kit preview](https://fi
 
 Need the whole homepage reviewed rather than only its first screen? [See the $59 teardown deliverables and guarantee](https://firstclick-fix.ppjdmpk.chatgpt.site/#checkout) before deciding.
 
+### If the email button does not open your mail app
+
+Copy this brief into your usual email provider and send it to **ppjdmpk@gmail.com**.
+Choose one request type; sending the brief is not a payment. Include only a public
+URL and copy notes, never credentials or customer information.
+
+```text
+Subject: FirstClick homepage request from GitHub
+
+Request type: [One free finding OR $29 First Screen Fix, pay after delivery if useful]
+Public homepage URL:
+The one action I want visitors to take:
+Current headline (optional):
+Current button and where it leads (optional):
+```
+
+The free option receives one observation. The $29 option receives one diagnosis
+plus a headline, supporting line and CTA within 24 hours; if it is not useful,
+you owe nothing. Neither option includes website implementation.
+
 ## Files
 
 - `index.html` — accessible semantic markup
