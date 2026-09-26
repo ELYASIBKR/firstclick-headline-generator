@@ -70,10 +70,10 @@
       document.querySelector("#cta").textContent = `${sentence(action)} →`;
     }
 
-    const requestBody = `Homepage URL:\nThe one action I want visitors to take: ${isExampleValue("action", draft.action) ? "" : tidy(draft.action)}\nMy current headline:\n`;
+    const requestBody = `Request: First Screen Fix — one diagnosis plus headline, supporting line and CTA, delivered by email within 24 hours. $29 after delivery only if useful; otherwise I owe nothing. No website implementation.\n\nHomepage URL:\nThe one action I want visitors to take: ${isExampleValue("action", draft.action) ? "" : tidy(draft.action)}\nMy current headline:\n`;
     document.querySelector("#request-fix").href = `mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20GitHub%20Pages&body=${encodeURIComponent(requestBody)}`;
 
-    const freeFindingBody = `Homepage URL:\nThe one action I want visitors to take: ${isExampleValue("action", draft.action) ? "" : tidy(draft.action)}\nWhat I sell: ${isExampleValue("service", draft.service) ? "" : tidy(draft.service)}\n`;
+    const freeFindingBody = `Request: One free homepage finding — one observation, not a full audit or rewrite. No purchase obligation.\n\nHomepage URL:\nThe one action I want visitors to take: ${isExampleValue("action", draft.action) ? "" : tidy(draft.action)}\nWhat I sell: ${isExampleValue("service", draft.service) ? "" : tidy(draft.service)}\n`;
     document.querySelector("#request-free-finding").href = `mailto:ppjdmpk@gmail.com?subject=One%20free%20homepage%20finding%20from%20GitHub%20Pages&body=${encodeURIComponent(freeFindingBody)}`;
   }
 
