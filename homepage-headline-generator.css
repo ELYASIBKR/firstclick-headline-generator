@@ -28,6 +28,9 @@ h1 { max-width: 1000px; margin: 0; font-size: clamp(54px, 8.5vw, 108px); line-he
 .free-finding h2 { max-width: 780px; margin: 12px 0; font-size: clamp(32px, 4vw, 50px); line-height: 1.05; letter-spacing: -.045em; text-transform: uppercase; }
 .free-finding p:not(.eyebrow) { max-width: 780px; font-size: 17px; line-height: 1.6; }
 .free-finding a { font-weight: 800; text-underline-offset: 3px; }
+.finding-example { max-width: 780px; margin: 22px 0; padding: 18px 22px; border-left: 4px solid var(--ink); background: var(--cream); }
+.finding-example p { margin: 8px 0; }
+.finding-example .eyebrow { font-size: 12px; }
 .human-fix { margin: 0 0 90px; padding: clamp(32px, 5vw, 64px); border: 1px solid var(--ink); background: var(--ink); color: var(--paper); }
 .human-fix h2 { max-width: 780px; margin: 12px 0; font-size: clamp(38px, 6vw, 72px); line-height: .94; letter-spacing: -.055em; text-transform: uppercase; }
 .human-fix > p:not(.eyebrow) { max-width: 780px; font-size: 18px; line-height: 1.6; }
