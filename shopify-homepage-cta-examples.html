@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://elyasibkr.github.io/firstclick-headline-generator/shopify-homepage-cta-examples.html">
   <script src="./shopify-cta-request.js" defer></script>
   <style>
+    .worksheet [hidden]{display:none}
     :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18312c;background:#f7f7f2;line-height:1.55}
     *{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:1.25rem}header{display:flex;justify-content:space-between;gap:1rem;align-items:center}a{color:#126353}a:focus-visible{outline:3px solid #126353;outline-offset:3px}main{padding-top:2.5rem;padding-bottom:4rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;max-width:19ch}h2{line-height:1.2}article,.next,.check,.worksheet{background:white;border:1px solid #d8e2db;border-radius:14px;padding:1.5rem;margin:1.5rem 0}article h3{font-size:1.45rem;line-height:1.2;margin:.5rem 0}.label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#517368}.note{color:#425d55}.next{background:#e9f3ec}.worksheet label{display:block;font-weight:700;margin:1rem 0}.worksheet input,.worksheet textarea{display:block;width:100%;font:inherit;color:inherit;background:#fff;border:1px solid #8ba99d;border-radius:6px;padding:.7rem;margin-top:.35rem}.worksheet textarea{min-height:5rem;resize:vertical}.button{display:inline-block;background:#126353;color:white;padding:.8rem 1rem;border-radius:7px;text-decoration:none;font-weight:700}.button:hover{background:#0b493d}footer{border-top:1px solid #d8e2db;color:#425d55}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}}
   </style>
@@ -91,6 +92,10 @@
     <p>Want paste-ready wording too? Request one diagnosis plus a headline, supporting line, and CTA within 24 hours. Pay $29 after delivery only if useful; otherwise, owe nothing.</p>
     <button class="button" id="cta-rewrite-request" type="button">Request the $29 pay-after-delivery fix using these notes</button>
     <p id="cta-email-status" role="status" aria-live="polite"></p>
+    <button id="cta-copy-notes" type="button">Copy worksheet notes for webmail or your own records</button>
+    <label id="cta-copy-fallback-label" hidden>Copy these notes manually
+      <textarea id="cta-copy-fallback" readonly></textarea>
+    </label>
     <p class="note">This opens a draft in your email app for you to review and send; it does not send automatically. If no email app opens, email <a href="mailto:ppjdmpk@gmail.com">ppjdmpk@gmail.com</a> with “One free homepage finding” in the subject and your homepage URL, desired action, and CTA notes.</p>
   </section>
   <section class="next" aria-labelledby="next-title">

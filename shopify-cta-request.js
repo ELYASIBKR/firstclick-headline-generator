@@ -39,3 +39,25 @@ function openRequest(paidRewrite) {
 
 requestButton.addEventListener("click", () => openRequest(false));
 document.getElementById("cta-rewrite-request").addEventListener("click", () => openRequest(true));
+
+document.getElementById("cta-copy-notes").addEventListener("click", async () => {
+  const fields = [
+    ["Homepage URL", "cta-homepage"], ["Desired visitor action", "cta-goal"],
+    ["Current homepage CTA", "cta-current"], ["CTA destination URL", "cta-destination"],
+    ["What appears first at the destination", "cta-first-view"], ["Possible mismatch or fix", "cta-mismatch"]
+  ];
+  const notes = fields.map(([label, id]) => `${label}: ${document.getElementById(id).value.trim() || "Not provided"}`).join("\n");
+  const fallbackLabel = document.getElementById("cta-copy-fallback-label");
+  const fallback = document.getElementById("cta-copy-fallback");
+  fallbackLabel.hidden = true;
+  try {
+    await navigator.clipboard.writeText(notes);
+    requestStatus.textContent = "Notes copied. Paste them into your records or an email you choose to send. Nothing was sent.";
+  } catch {
+    fallback.value = notes;
+    fallbackLabel.hidden = false;
+    fallback.focus();
+    fallback.select();
+    requestStatus.textContent = "Automatic copy is unavailable. Copy the selected notes below. Nothing was sent.";
+  }
+});
