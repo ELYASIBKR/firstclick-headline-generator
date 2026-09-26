@@ -69,9 +69,17 @@ For three different product categories, see the
 with headline, supporting line, CTA, and a brief explanation of each pattern.
 For button wording and destination checks, use the
 [Shopify homepage CTA examples](https://elyasibkr.github.io/firstclick-headline-generator/shopify-homepage-cta-examples.html).
-That page also includes a browser-local worksheet for comparing a button's wording
-with the first thing shoppers see after clicking it. Visitors can open a prefilled
-email draft from their notes to request one free finding; the page sends nothing.
+### Check your real CTA in three steps
+
+1. Open the [button-to-destination worksheet](https://elyasibkr.github.io/firstclick-headline-generator/shopify-homepage-cta-examples.html#worksheet-title) and enter your public homepage, desired visitor action, and current button wording.
+2. Follow your real button on a phone. Record the destination and what a new shopper sees first. If the promise does not match, note the smallest honest correction.
+3. Use **Copy worksheet notes** to save your observations or paste them into webmail. If automatic copying is unavailable, the page shows selected text you can copy manually.
+
+You can stop there and apply the check yourself for free. For help, choose either
+**one free finding** or the separately labeled **$29 pay-after-delivery fix**.
+Each request opens a draft carrying your notes for you to review and send. The
+paid option delivers one diagnosis plus a headline, supporting line, and CTA;
+pay only if useful. The page never sends an email automatically.
 
 For that fictional store, a first-screen draft could look like this:
 
