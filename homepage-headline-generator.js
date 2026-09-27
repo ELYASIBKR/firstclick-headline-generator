@@ -78,6 +78,7 @@
     const requestContext = [["service", "What I sell"], ["audience", "Who it is for"], ["outcome", "Intended customer result"]]
       .map(([name, label]) => `${label}: ${isExampleValue(name, draft[name]) ? "" : tidy(draft[name])}`)
       .join("\n");
+    document.querySelector("#request-plain-text").value = `To: ppjdmpk@gmail.com\nSubject: First Screen Fix request from GitHub Pages\n\n${requestBody}\nOptional context from my inputs (please verify before sending):\n${requestContext}\n`;
     document.querySelector("#request-fix").href = `mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20GitHub%20Pages&body=${encodeURIComponent(requestBody + "\nOptional context from my inputs (please verify before sending):\n" + requestContext + "\n")}`;
 
     const freeFindingBody = `Request: One free homepage finding — one observation, not a full audit or rewrite. No purchase obligation.\n\nHomepage URL:\nThe one action I want visitors to take: ${isExampleValue("action", draft.action) ? "" : tidy(draft.action)}\nWhat I sell: ${isExampleValue("service", draft.service) ? "" : tidy(draft.service)}\n`;
