@@ -108,6 +108,8 @@ Request a **First Screen Fix** with your public homepage URL and the one action 
 
 See an [illustrative First Screen Fix deliverable](https://elyasibkr.github.io/firstclick-headline-generator/first-screen-fix-sample.html) for the exact diagnosis, draft, and verification-check format. The example is fictional, not a measured result or a real client audit.
 
+For a real, public example of the narrower free-feedback scope, read [our ZapyNext observation and the creator's reply](https://github.com/vercel/next.js/discussions/99054#discussioncomment-18622895). We flagged a possible mismatch between PRO branding and the site's free-use messaging. The creator reported removing the badge. This was unpaid, AI-assisted feedback based on public HTML, not a paid engagement, full product test or endorsement of FirstClick. We have not independently verified the implementation or measured any conversion effect.
+
 If the work is useful, pay **$29 after delivery**. If it is not useful, you owe nothing.
 
 [Request a First Screen Fix by email](mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20GitHub%20README&body=Homepage%20URL%3A%20%0AThe%20one%20action%20I%20want%20visitors%20to%20take%3A%20%0AMy%20current%20headline%3A%20)
