@@ -114,6 +114,8 @@ If the work is useful, pay **$29 after delivery**. If it is not useful, you owe 
 
 Not ready for a full rewrite? [Ask for one free homepage finding](mailto:ppjdmpk@gmail.com?subject=One%20free%20homepage%20finding%20from%20GitHub%20README&body=Homepage%20URL%3A%20%0AThe%20one%20action%20I%20want%20visitors%20to%20take%3A%20) with your public URL and desired visitor action. It is one observation, not a full audit, with no obligation to buy.
 
+Already use GitHub? [Request one free finding in a public issue](https://github.com/ELYASIBKR/firstclick-headline-generator/issues/new?template=free-homepage-finding.yml) instead of email. Your request and the AI-assisted reply will be public. Include only a public homepage URL and desired visitor action; do not post email addresses, credentials, customer information or private links. This route is for one free observation, not a paid rewrite.
+
 Prefer to work on the copy yourself? The [FirstClick DIY kit preview](https://firstclick-fix.ppjdmpk.chatgpt.site/firstclick-diy-kit-preview.pdf) shows three real workbook pages plus a purchase page before you decide on the $29 full kit. This open-source generator remains free.
 
 Need the whole homepage reviewed rather than only its first screen? [See the $59 teardown deliverables and guarantee](https://firstclick-fix.ppjdmpk.chatgpt.site/#checkout) before deciding.
@@ -168,7 +170,7 @@ you owe nothing. Neither option includes website implementation.
 
 Generating drafts happens locally; the project includes no analytics, cookies, third-party scripts, or external API calls. Optional site-review buttons open email drafts containing the details you provide. Review the draft before sending: sending it shares those details with FirstClick Fix through your email provider. Nothing is sent automatically by the page.
 
-For site-specific review, share only your public homepage URL, desired visitor action, and relevant copy notes. No store login, customer records, or payment details are needed.
+For site-specific review, share only your public homepage URL, desired visitor action, and relevant copy notes. No store login, customer records, or payment details are needed. The optional GitHub issue route publishes your submitted details and our reply publicly on GitHub; use it only for information you want public.
 
 ## License
 

@@ -1,0 +1,37 @@
+name: One free homepage finding
+description: Request one AI-assisted observation about your public homepage, with no purchase obligation.
+title: "Free homepage finding: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request one actionable observation about your homepage and its next click. This is an AI-assisted review, not a full audit, implementation service or performance guarantee. No purchase is required.
+
+        **This issue and our reply are public.** Share only a public homepage and non-sensitive copy notes. Do not include your email, credentials, customer records, private links or payment details. If you prefer an email reply, use the email request in the README instead.
+  - type: input
+    id: homepage
+    attributes:
+      label: Public homepage URL
+      description: The page you want reviewed; it must be accessible without signing in.
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: input
+    id: visitor-action
+    attributes:
+      label: The one action you want visitors to take
+      placeholder: For example, browse a collection or request a quote.
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: One concern (optional)
+      description: A short, non-sensitive note about the headline, supporting line or button.
+  - type: checkboxes
+    id: public-scope
+    attributes:
+      label: Public request and scope
+      options:
+        - label: I understand this request and its reply are public, and I am asking for one free AI-assisted observation, not a full audit or paid rewrite.
+          required: true
