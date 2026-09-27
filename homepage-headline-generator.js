@@ -137,6 +137,12 @@
     button.addEventListener("click", () => copyResult(button));
   });
   document.querySelector("#copy-draft").addEventListener("click", copyDraft);
+  document.querySelector("#draft-headline").addEventListener("change", () => {
+    copyFallback.hidden = true;
+    copyText.value = "";
+    note.textContent = "Headline direction changed. Copy the complete draft again to use this direction.";
+    note.dataset.state = "hint";
+  });
 
   render();
 })();
