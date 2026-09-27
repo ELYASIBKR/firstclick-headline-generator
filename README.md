@@ -108,13 +108,13 @@ Request a **First Screen Fix** with your public homepage URL and the one action 
 
 See an [illustrative First Screen Fix deliverable](https://elyasibkr.github.io/firstclick-headline-generator/first-screen-fix-sample.html) for the exact diagnosis, draft, and verification-check format. The example is fictional, not a measured result or a real client audit.
 
-For a real, public example of the narrower free-feedback scope, read [our ZapyNext observation and the creator's reply](https://github.com/vercel/next.js/discussions/99054#discussioncomment-18622895). We flagged a possible mismatch between PRO branding and the site's free-use messaging. The creator reported removing the badge. This was unpaid, AI-assisted feedback based on public HTML, not a paid engagement, full product test or endorsement of FirstClick. We have not independently verified the implementation or measured any conversion effect.
-
 If the work is useful, pay **$29 after delivery**. If it is not useful, you owe nothing.
 
 [Request a First Screen Fix by email](mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20request%20from%20GitHub%20README&body=Homepage%20URL%3A%20%0AThe%20one%20action%20I%20want%20visitors%20to%20take%3A%20%0AMy%20current%20headline%3A%20)
 
 Not ready for a full rewrite? [Ask for one free homepage finding](mailto:ppjdmpk@gmail.com?subject=One%20free%20homepage%20finding%20from%20GitHub%20README&body=Homepage%20URL%3A%20%0AThe%20one%20action%20I%20want%20visitors%20to%20take%3A%20) with your public URL and desired visitor action. It is one observation, not a full audit, with no obligation to buy.
+
+For a real, public example of the narrower free-feedback scope, read [our ZapyNext observation and the creator's reply](https://github.com/vercel/next.js/discussions/99054#discussioncomment-18622895). We flagged a possible mismatch between PRO branding and the site's free-use messaging. The creator reported removing the badge. This was unpaid, AI-assisted feedback based on public HTML, not a paid engagement, full product test or endorsement of FirstClick. We have not independently verified the implementation or measured any conversion effect.
 
 Already use GitHub? [Request one free finding in a public issue](https://github.com/ELYASIBKR/firstclick-headline-generator/issues/new?template=free-homepage-finding.yml) instead of email. Your request and the AI-assisted reply will be public. Include only a public homepage URL and desired visitor action; do not post email addresses, credentials, customer information or private links. This route is for one free observation, not a paid rewrite.
 
