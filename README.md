@@ -100,7 +100,9 @@ question; and the CTA names the collection it should open. Replace any detail
 that the actual product page cannot verify, especially file format, delivery
 timing, and what customization is included.
 
-## Want a human rewrite?
+## Want a site-specific rewrite?
+
+FirstClick uses an AI assistant to inspect your public page and prepare recommendations, including free findings and First Screen Fixes. This is not a human-only copywriting service. Check delivered copy for accuracy before publishing.
 
 Request a **First Screen Fix** with your public homepage URL and the one action you want visitors to take. You will receive one prioritized diagnosis plus a paste-ready headline, supporting line, and CTA within 24 hours.
 
@@ -164,9 +166,9 @@ you owe nothing. Neither option includes website implementation.
 
 ## Privacy
 
-Generating drafts happens locally; the project includes no analytics, cookies, third-party scripts, or external API calls. Optional human-review buttons open email drafts containing the details you provide. Review the draft before sending: sending it shares those details with FirstClick Fix through your email provider. Nothing is sent automatically by the page.
+Generating drafts happens locally; the project includes no analytics, cookies, third-party scripts, or external API calls. Optional site-review buttons open email drafts containing the details you provide. Review the draft before sending: sending it shares those details with FirstClick Fix through your email provider. Nothing is sent automatically by the page.
 
-For human review, share only your public homepage URL, desired visitor action, and relevant copy notes. No store login, customer records, or payment details are needed.
+For site-specific review, share only your public homepage URL, desired visitor action, and relevant copy notes. No store login, customer records, or payment details are needed.
 
 ## License
 
