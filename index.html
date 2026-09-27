@@ -89,6 +89,10 @@
             <button id="copy-draft" type="button">Copy headline + supporting line + CTA</button>
           </div>
           <p id="copy-note" role="status"></p>
+          <div id="draft-copy-fallback" hidden>
+            <label for="draft-copy-text">Your complete draft — select and copy manually</label>
+            <textarea id="draft-copy-text" rows="6" readonly style="width:100%;box-sizing:border-box" aria-describedby="copy-note"></textarea>
+          </div>
           <section class="draft-check" aria-labelledby="draft-check-title">
             <h3 id="draft-check-title">Before you paste this draft</h3>
             <ol>

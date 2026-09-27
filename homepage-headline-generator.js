@@ -21,6 +21,8 @@
 
   const form = document.querySelector("#headline-form");
   const note = document.querySelector("#copy-note");
+  const copyFallback = document.querySelector("#draft-copy-fallback");
+  const copyText = document.querySelector("#draft-copy-text");
 
   function tidy(value) {
     return value.trim().replace(/[.!?]+$/, "");
@@ -40,6 +42,8 @@
   }
 
   function render() {
+    copyFallback.hidden = true;
+    copyText.value = "";
     const draft = values();
     const ready = ["service", "audience", "outcome"].every(name => tidy(draft[name] || ""));
     document.querySelectorAll("[data-copy], #copy-draft").forEach(button => { button.disabled = !ready; });
@@ -99,12 +103,17 @@
     const support = document.querySelector("#support").textContent;
     const cta = document.querySelector("#cta").textContent.replace(/\s+→$/, "");
     const draft = `Headline: ${headline}\nSupporting line: ${support}\nCTA: ${cta}`;
+    copyFallback.hidden = true;
     try {
       await navigator.clipboard.writeText(draft);
       note.textContent = "Full first-screen draft copied.";
       note.dataset.state = "success";
     } catch {
-      note.textContent = "Copy failed. Select the headline, supporting line, and CTA text to copy manually.";
+      copyText.value = draft;
+      copyFallback.hidden = false;
+      copyText.focus();
+      copyText.select();
+      note.textContent = "Automatic copying is unavailable. Your complete draft is selected below; use your device's Copy command.";
       note.dataset.state = "error";
     }
   }
