@@ -45,14 +45,14 @@
     copyFallback.hidden = true;
     copyText.value = "";
     const draft = values();
-    const ready = ["service", "audience", "outcome"].every(name => tidy(draft[name] || ""));
+    const ready = ["service", "audience", "outcome", "action"].every(name => tidy(draft[name] || ""));
     document.querySelectorAll("[data-copy], #copy-draft").forEach(button => { button.disabled = !ready; });
     if (!ready) {
       ["headline-1", "headline-2", "headline-3", "support", "cta"].forEach(id => {
         document.getElementById(id).textContent = "";
       });
-      document.querySelector("#headline-1").textContent = "Add your offer, audience, and result to begin.";
-      note.textContent = "Add what you sell, who it is for, and the result to see your drafts.";
+      document.querySelector("#headline-1").textContent = "Add your offer, audience, result, and next action to begin.";
+      note.textContent = "Add what you sell, who it is for, the result, and the next action to see your drafts.";
       note.dataset.state = "hint";
     } else {
       note.textContent = "";
@@ -63,7 +63,7 @@
     const outcome = tidy(draft.outcome) || "the result they want";
     const location = tidy(draft.location);
     const proof = tidy(draft.proof);
-    const action = tidy(draft.action) || "Get started";
+    const action = tidy(draft.action);
     const place = location ? ` in ${location}` : "";
 
     if (ready) {
