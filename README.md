@@ -51,6 +51,9 @@ For three fictional service-business first screens with headlines, supporting
 lines, CTAs, and claim-checking notes, see the
 [service-business homepage examples](https://elyasibkr.github.io/firstclick-headline-generator/service-business-homepage-examples.html).
 
+For demo-led, self-serve, and product-tour paths, see the
+[fictional SaaS homepage examples](https://elyasibkr.github.io/firstclick-headline-generator/saas-homepage-headline-examples.html).
+
 ## Using it for a Shopify store
 
 The live tool's **Try a store example** button shows how a fictional product
