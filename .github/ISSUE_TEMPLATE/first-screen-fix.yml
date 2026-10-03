@@ -1,0 +1,37 @@
+name: First Screen Fix — work first, pay only if useful
+description: Request a public, AI-assisted first-screen diagnosis and copy rewrite for $29 after delivery only if useful.
+title: "First Screen Fix request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request one site-specific diagnosis plus a paste-ready headline, supporting line, and primary CTA. We will reply here within 24 hours of a valid request, before asking for payment. If the work is useful, pay $29 after delivery; otherwise you owe nothing. This is AI-assisted copy review, not website implementation or a performance guarantee.
+
+        **This request and our completed rewrite will be public.** Share only a public homepage URL and non-sensitive copy details. Do not include an email address, login, customer data, private links, or payment information. For private delivery, request the same offer by email using the link in the README. For only one free observation, choose the separate free-finding template.
+  - type: input
+    id: homepage
+    attributes:
+      label: Public homepage URL
+      description: The page to review; it must be accessible without signing in.
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: input
+    id: visitor-action
+    attributes:
+      label: The one action you want visitors to take
+      placeholder: For example, start a trial or request a quote.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Current headline or important context (optional)
+      description: Include only public, non-sensitive wording or offer constraints.
+  - type: checkboxes
+    id: public-work-first-consent
+    attributes:
+      label: Public delivery and work-first terms
+      options:
+        - label: I understand that my request and the AI-assisted rewrite will be public, and I will be asked to pay $29 only after delivery if I find it useful; otherwise I owe nothing.
+          required: true
