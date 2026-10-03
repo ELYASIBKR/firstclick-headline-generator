@@ -18,6 +18,14 @@
     proof: "",
     action: "See the planner",
   };
+  const saasExample = {
+    service: "client approval software",
+    audience: "small agencies",
+    outcome: "client feedback and approvals in one place",
+    location: "",
+    proof: "",
+    action: "View a sample workspace",
+  };
 
   const form = document.querySelector("#headline-form");
   const note = document.querySelector("#copy-note");
@@ -38,7 +46,7 @@
   }
 
   function isExampleValue(name, value) {
-    return [example, storeExample].some(sample => tidy(value) === sample[name]);
+    return [example, storeExample, saasExample].some(sample => tidy(value) === sample[name]);
   }
 
   function render() {
@@ -141,6 +149,10 @@
   });
   document.querySelector("#store-example").addEventListener("click", () => {
     Object.entries(storeExample).forEach(([name, value]) => { form.elements[name].value = value; });
+    render();
+  });
+  document.querySelector("#saas-example").addEventListener("click", () => {
+    Object.entries(saasExample).forEach(([name, value]) => { form.elements[name].value = value; });
     render();
   });
   document.querySelectorAll("[data-copy]").forEach(button => {

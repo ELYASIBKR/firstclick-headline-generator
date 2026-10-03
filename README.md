@@ -7,6 +7,7 @@ A small, local-only browser tool that turns six plain-language inputs into:
 - a primary call to action.
 
 The tool has no dependencies, login, analytics, ads, uploads, network requests, or build step. It runs entirely in the browser.
+Use the service, store, or SaaS example button to see a fictional starting brief, then replace every detail with your real offer and next visitor action.
 Enter your offer, audience, intended result, and next visitor action to generate a draft. Location and proof are optional; the tool does not substitute a vague "Get started" button when the action is blank.
 Choose one headline direction and use **Copy headline + supporting line + CTA**
 to paste a complete first-screen draft in one step. The clipboard action runs
