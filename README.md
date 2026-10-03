@@ -54,6 +54,9 @@ lines, CTAs, and claim-checking notes, see the
 
 For demo-led, self-serve, and product-tour paths, see the
 [fictional SaaS homepage examples](https://elyasibkr.github.io/firstclick-headline-generator/saas-homepage-headline-examples.html).
+Before rewriting a live page, use the free
+[eight-point SaaS homepage clarity checklist](https://elyasibkr.github.io/firstclick-headline-generator/saas-homepage-clarity-checklist.html)
+to check the category, audience, claims, trial terms, and button destination.
 
 ## Using it for a Shopify store
 
