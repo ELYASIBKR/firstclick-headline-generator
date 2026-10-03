@@ -11,6 +11,7 @@ Enter your offer, audience, intended result, and next visitor action to generate
 Choose one headline direction and use **Copy headline + supporting line + CTA**
 to paste a complete first-screen draft in one step. The clipboard action runs
 only when you click it.
+If your browser blocks clipboard access, the selected headline, supporting line, CTA, or full draft appears in a selected text box for manual copying.
 
 ## Use it
 

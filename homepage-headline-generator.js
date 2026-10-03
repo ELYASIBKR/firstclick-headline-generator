@@ -88,6 +88,8 @@
   async function copyResult(button) {
     const target = document.querySelector(`#${button.dataset.copy}`);
     const value = target.textContent.replace(/\s+→$/, "");
+    copyFallback.hidden = true;
+    copyText.value = "";
     try {
       await navigator.clipboard.writeText(value);
       const original = button.textContent;
@@ -96,7 +98,11 @@
       note.dataset.state = "success";
       window.setTimeout(() => { button.textContent = original; }, 1600);
     } catch {
-      note.textContent = "Select the result text and copy it manually.";
+      copyText.value = value;
+      copyFallback.hidden = false;
+      copyText.focus();
+      copyText.select();
+      note.textContent = "Automatic copying is unavailable. Your selected result is ready below; use your device's Copy command.";
       note.dataset.state = "error";
     }
   }
