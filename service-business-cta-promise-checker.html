@@ -47,6 +47,7 @@
   <section class="card result" id="result" aria-labelledby="result-title" hidden aria-live="polite">
     <h2 id="result-title">A label to test</h2>
     <p id="current-result"></p>
+    <p id="promise-check"></p>
     <p><strong>Suggested button:</strong> <span id="suggestion"></span></p>
     <p id="reason"></p>
     <p class="hint">Use this only if the linked page really does what the label says. Check mobile behavior, location/eligibility rules, and whether any extra step is required before a booking or price is confirmed.</p>
@@ -77,12 +78,32 @@
     phone: ["Call us", "A call-specific label tells visitors their device will start a phone call."],
     services: ["Explore services", "Use this when the destination lists services. Add ‘and pricing’ only if real prices are visible there."]
   };
+  function checkPromise(text, destination) {
+    if (!text) return "No current label to compare. Verify the suggested wording against your real click path.";
+    const current = text.toLowerCase();
+    if (/\b(book|booking|schedule|reserve|appointment)\b/.test(current) && destination !== "confirmed") {
+      return destination === "availability"
+        ? "Check: the current label sounds like booking, but the next page only shows times. Make the intermediate step clear."
+        : "Check: the current label sounds like booking, but the selected destination does not confirm an appointment.";
+    }
+    if (/\b(quote|estimate)\b/.test(current) && destination !== "quote") {
+      return "Check: the current label promises a quote or estimate, but the selected destination is not a quote-request path.";
+    }
+    if (/\b(call|phone)\b/.test(current) && destination !== "phone") {
+      return "Check: the current label suggests a call, but the selected destination does not start one.";
+    }
+    if (/\b(price|prices|pricing|cost|rates)\b/.test(current) && destination !== "services") {
+      return "Check: the current label suggests visible prices, but the selected destination may not show them.";
+    }
+    return "No obvious wording mismatch detected by these simple rules. Still open the destination and verify what a visitor can actually do.";
+  }
   document.querySelector("#cta-form").addEventListener("submit", event => {
     event.preventDefault();
     const choice = labels[document.querySelector("#destination").value];
     if (!choice) return;
     const current = document.querySelector("#current").value.trim();
     document.querySelector("#current-result").textContent = current ? `Current button: “${current}”` : "No current button text entered.";
+    document.querySelector("#promise-check").textContent = checkPromise(current, document.querySelector("#destination").value);
     document.querySelector("#suggestion").textContent = choice[0];
     document.querySelector("#reason").textContent = choice[1];
     document.querySelector("#result").hidden = false;
