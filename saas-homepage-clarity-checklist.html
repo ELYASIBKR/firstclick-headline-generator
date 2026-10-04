@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://elyasibkr.github.io/firstclick-headline-generator/saas-homepage-clarity-checklist.html">
   <style>
     :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18312c;background:#f7f7f2;line-height:1.55}
-    *{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:1.25rem}header{display:flex;justify-content:space-between;gap:1rem;align-items:center}a{color:#126353}a:focus-visible,button:focus-visible{outline:3px solid #126353;outline-offset:3px}main{padding-top:2.5rem;padding-bottom:4rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;max-width:21ch}h2{line-height:1.2}.panel{background:white;border:1px solid #d8e2db;border-radius:14px;padding:1.5rem;margin:1.5rem 0}.next{background:#e9f3ec}.label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#517368}li{margin:.75rem 0}label{display:block;font-weight:650}input,textarea{display:block;width:100%;margin:.5rem 0 1rem;padding:.75rem;font:inherit;border:1px solid #8ba99d;border-radius:7px}textarea{min-height:7rem}.button,button{display:inline-block;background:#126353;color:white;padding:.8rem 1rem;border:0;border-radius:7px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer}.button:hover,button:hover{background:#0b493d}.choice{display:flex;flex-wrap:wrap;gap:.75rem}footer{border-top:1px solid #d8e2db;color:#425d55}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}}
+    *{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:1.25rem}header{display:flex;justify-content:space-between;gap:1rem;align-items:center}a{color:#126353}a:focus-visible,button:focus-visible{outline:3px solid #126353;outline-offset:3px}main{padding-top:2.5rem;padding-bottom:4rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;max-width:21ch}h2{line-height:1.2}.panel{background:white;border:1px solid #d8e2db;border-radius:14px;padding:1.5rem;margin:1.5rem 0}.next{background:#e9f3ec}.label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#517368}li{margin:.75rem 0}label{display:block;font-weight:650}input,textarea{display:block;width:100%;margin:.5rem 0 1rem;padding:.75rem;font:inherit;border:1px solid #8ba99d;border-radius:7px}textarea{min-height:7rem}textarea[hidden]{display:none}.button,button{display:inline-block;background:#126353;color:white;padding:.8rem 1rem;border:0;border-radius:7px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer}.button:hover,button:hover{background:#0b493d}.choice{display:flex;flex-wrap:wrap;gap:.75rem}footer{border-top:1px solid #d8e2db;color:#425d55}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}}
   </style>
 </head>
 <body>
@@ -56,9 +56,12 @@
     <div class="choice">
       <button id="draft-free" type="button">Draft a private free-finding email</button>
       <button id="draft-fix" type="button">Draft a private $29 work-first email</button>
+      <button id="copy-free-request" type="button">Copy free-finding request</button>
+      <button id="copy-fix-request" type="button">Copy work-first request</button>
     </div>
     <p id="request-status" role="status" aria-live="polite"></p>
-    <p>No mail app? Email <a href="mailto:ppjdmpk@gmail.com">ppjdmpk@gmail.com</a> with your public URL, desired action, and either “One free homepage finding” or “First Screen Fix” as the subject. For public delivery, <a href="https://github.com/ELYASIBKR/firstclick-headline-generator/issues/new?template=first-screen-fix.yml">use the First Screen Fix GitHub issue form</a>. Public requests and AI-assisted replies are visible to everyone.</p>
+    <textarea id="request-copy" aria-label="Request text to copy manually" readonly hidden></textarea>
+    <p>No mail app? Copy the complete request above and email it to <a href="mailto:ppjdmpk@gmail.com">ppjdmpk@gmail.com</a> from your preferred inbox. For public delivery, <a href="https://github.com/ELYASIBKR/firstclick-headline-generator/issues/new?template=first-screen-fix.yml">use the First Screen Fix GitHub issue form</a>. Public requests and AI-assisted replies are visible to everyone.</p>
   </section>
 </main>
 <footer>Free self-review resource. No conversion result is promised or implied.</footer>
@@ -85,29 +88,55 @@
   const urlField = document.getElementById('homepage-url');
   const actionField = document.getElementById('visitor-action');
   const requestStatus = document.getElementById('request-status');
-  function draftRequest(kind) {
+  const requestCopy = document.getElementById('request-copy');
+  function requestDetails(kind) {
     const url = urlField.value.trim();
     const action = actionField.value.trim();
     if (!url || !urlField.checkValidity() || !/^https?:\/\//i.test(url)) {
       requestStatus.textContent = 'Enter a valid public homepage URL first.';
       urlField.focus();
-      return;
+      return null;
     }
     if (!action) {
       requestStatus.textContent = 'Name the one visitor action you want first.';
       actionField.focus();
-      return;
+      return null;
     }
     const isFree = kind === 'free';
     const subject = isFree ? 'One free SaaS homepage finding' : 'First Screen Fix request from SaaS checklist';
     const body = `Homepage URL: ${url}\nDesired visitor action: ${action}\nMy observation (optional): ${notes.value.trim()}\n`;
+    return { isFree, subject, body };
+  }
+  function draftRequest(kind) {
+    const details = requestDetails(kind);
+    if (!details) return;
+    const { isFree, subject, body } = details;
     requestStatus.textContent = isFree
       ? 'Opening a free-finding email draft for you to review and send. No purchase obligation.'
       : 'Opening a First Screen Fix email draft for you to review and send. The $29 request follows useful delivery only.';
     window.location.href = `mailto:ppjdmpk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
+  async function copyRequest(kind) {
+    const details = requestDetails(kind);
+    if (!details) return;
+    const value = `To: ppjdmpk@gmail.com\nSubject: ${details.subject}\n\n${details.body}`;
+    try {
+      if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(value);
+      requestCopy.hidden = true;
+      requestStatus.textContent = 'Complete request copied. Paste it into your email, review it, then send it yourself.';
+    } catch {
+      requestCopy.value = value;
+      requestCopy.hidden = false;
+      requestCopy.focus();
+      requestCopy.select();
+      requestStatus.textContent = 'Automatic copying is unavailable. The complete request is selected; use your device’s Copy command, then review and send it yourself.';
+    }
+  }
   document.getElementById('draft-free').addEventListener('click', () => draftRequest('free'));
   document.getElementById('draft-fix').addEventListener('click', () => draftRequest('fix'));
+  document.getElementById('copy-free-request').addEventListener('click', () => copyRequest('free'));
+  document.getElementById('copy-fix-request').addEventListener('click', () => copyRequest('fix'));
 </script>
 </body>
 </html>
