@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://elyasibkr.github.io/firstclick-headline-generator/saas-homepage-clarity-checklist.html">
   <style>
     :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18312c;background:#f7f7f2;line-height:1.55}
-    *{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:1.25rem}header{display:flex;justify-content:space-between;gap:1rem;align-items:center}a{color:#126353}a:focus-visible,button:focus-visible{outline:3px solid #126353;outline-offset:3px}main{padding-top:2.5rem;padding-bottom:4rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;max-width:21ch}h2{line-height:1.2}.panel{background:white;border:1px solid #d8e2db;border-radius:14px;padding:1.5rem;margin:1.5rem 0}.next{background:#e9f3ec}.label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#517368}li{margin:.75rem 0}label{display:block;font-weight:650}textarea{display:block;width:100%;min-height:7rem;margin-top:.5rem;padding:.75rem;font:inherit;border:1px solid #8ba99d;border-radius:7px}.button,button{display:inline-block;background:#126353;color:white;padding:.8rem 1rem;border:0;border-radius:7px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer}.button:hover,button:hover{background:#0b493d}footer{border-top:1px solid #d8e2db;color:#425d55}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}}
+    *{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:1.25rem}header{display:flex;justify-content:space-between;gap:1rem;align-items:center}a{color:#126353}a:focus-visible,button:focus-visible{outline:3px solid #126353;outline-offset:3px}main{padding-top:2.5rem;padding-bottom:4rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;max-width:21ch}h2{line-height:1.2}.panel{background:white;border:1px solid #d8e2db;border-radius:14px;padding:1.5rem;margin:1.5rem 0}.next{background:#e9f3ec}.label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#517368}li{margin:.75rem 0}label{display:block;font-weight:650}input,textarea{display:block;width:100%;margin:.5rem 0 1rem;padding:.75rem;font:inherit;border:1px solid #8ba99d;border-radius:7px}textarea{min-height:7rem}.button,button{display:inline-block;background:#126353;color:white;padding:.8rem 1rem;border:0;border-radius:7px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer}.button:hover,button:hover{background:#0b493d}.choice{display:flex;flex-wrap:wrap;gap:.75rem}footer{border-top:1px solid #d8e2db;color:#425d55}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}}
   </style>
 </head>
 <body>
@@ -38,19 +38,27 @@
   </section>
   <section class="panel" aria-labelledby="notes-title">
     <h2 id="notes-title">Keep one observation</h2>
+    <label for="homepage-url">Your public homepage URL</label>
+    <input id="homepage-url" type="url" placeholder="https://example.com/">
+    <label for="visitor-action">The one action you want visitors to take</label>
+    <input id="visitor-action" type="text" placeholder="Request a demo, start a trial, or view a tour">
     <label for="notes">Write the biggest mismatch you actually found, its current button destination, and one truthful change.</label>
     <textarea id="notes" placeholder="Observed: …&#10;Destination: …&#10;Smallest accurate fix: …"></textarea>
-    <p>Your notes stay in this browser tab; this page does not submit or save them. If you request help below, paste your observation alongside your public URL and desired visitor action.</p>
+    <p>These fields stay in this browser tab; the page does not submit or save them. Copy your observation or open a reviewable email draft below. No message is sent unless you send it from your own mail app.</p>
     <button id="copy-notes" type="button">Copy my observation</button>
     <p id="copy-status" role="status" aria-live="polite"></p>
   </section>
   <section class="panel next" aria-labelledby="next-title">
     <h2 id="next-title">Want help with the next draft?</h2>
     <p>Use the <a href="./">free local-only generator</a> to draft three headline directions, a supporting line, and a CTA. Check all generated claims and the actual button destination before publishing.</p>
-    <p>For one outside observation, <a href="https://github.com/ELYASIBKR/firstclick-headline-generator/issues/new?template=free-homepage-finding.yml">request one free finding in a public GitHub issue</a>, or email <a href="mailto:ppjdmpk@gmail.com?subject=One%20free%20SaaS%20homepage%20finding&amp;body=Homepage%20URL%3A%20%0AThe%20one%20action%20I%20want%20visitors%20to%20take%3A%20">a private free-finding request</a>. Share a public URL and intended visitor action, not credentials or customer data. The review is AI-assisted and there is no purchase obligation.</p>
+    <p>For one outside observation, ask for a free finding below or <a href="https://github.com/ELYASIBKR/firstclick-headline-generator/issues/new?template=free-homepage-finding.yml">request it in a public GitHub issue</a>. Share a public URL and intended visitor action, not credentials or customer data. The review is AI-assisted and there is no purchase obligation.</p>
     <p>For a site-specific diagnosis and paste-ready headline, supporting line, and CTA, the separate <a href="./first-screen-fix-sample.html">First Screen Fix sample</a> shows the format. The $29 AI-assisted rewrite is delivered before payment; pay only if useful, otherwise owe nothing.</p>
-    <a class="button" href="https://github.com/ELYASIBKR/firstclick-headline-generator/issues/new?template=first-screen-fix.yml">Request a public First Screen Fix</a>
-    <p>Prefer a private reply? Email <a href="mailto:ppjdmpk@gmail.com?subject=First%20Screen%20Fix%20from%20SaaS%20checklist&amp;body=Homepage%20URL%3A%20%0AThe%20one%20action%20I%20want%20visitors%20to%20take%3A%20">ppjdmpk@gmail.com</a> with your public URL and desired visitor action. Public GitHub requests and AI-assisted replies are visible to everyone.</p>
+    <div class="choice">
+      <button id="draft-free" type="button">Draft a private free-finding email</button>
+      <button id="draft-fix" type="button">Draft a private $29 work-first email</button>
+    </div>
+    <p id="request-status" role="status" aria-live="polite"></p>
+    <p>No mail app? Email <a href="mailto:ppjdmpk@gmail.com">ppjdmpk@gmail.com</a> with your public URL, desired action, and either “One free homepage finding” or “First Screen Fix” as the subject. For public delivery, <a href="https://github.com/ELYASIBKR/firstclick-headline-generator/issues/new?template=first-screen-fix.yml">use the First Screen Fix GitHub issue form</a>. Public requests and AI-assisted replies are visible to everyone.</p>
   </section>
 </main>
 <footer>Free self-review resource. No conversion result is promised or implied.</footer>
@@ -74,6 +82,32 @@
       status.textContent = 'Automatic copying is unavailable. The observation is selected; use your device’s Copy command.';
     }
   });
+  const urlField = document.getElementById('homepage-url');
+  const actionField = document.getElementById('visitor-action');
+  const requestStatus = document.getElementById('request-status');
+  function draftRequest(kind) {
+    const url = urlField.value.trim();
+    const action = actionField.value.trim();
+    if (!url || !urlField.checkValidity() || !/^https?:\/\//i.test(url)) {
+      requestStatus.textContent = 'Enter a valid public homepage URL first.';
+      urlField.focus();
+      return;
+    }
+    if (!action) {
+      requestStatus.textContent = 'Name the one visitor action you want first.';
+      actionField.focus();
+      return;
+    }
+    const isFree = kind === 'free';
+    const subject = isFree ? 'One free SaaS homepage finding' : 'First Screen Fix request from SaaS checklist';
+    const body = `Homepage URL: ${url}\nDesired visitor action: ${action}\nMy observation (optional): ${notes.value.trim()}\n`;
+    requestStatus.textContent = isFree
+      ? 'Opening a free-finding email draft for you to review and send. No purchase obligation.'
+      : 'Opening a First Screen Fix email draft for you to review and send. The $29 request follows useful delivery only.';
+    window.location.href = `mailto:ppjdmpk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
+  document.getElementById('draft-free').addEventListener('click', () => draftRequest('free'));
+  document.getElementById('draft-fix').addEventListener('click', () => draftRequest('fix'));
 </script>
 </body>
 </html>
