@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://elyasibkr.github.io/firstclick-headline-generator/saas-homepage-clarity-checklist.html">
   <style>
     :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18312c;background:#f7f7f2;line-height:1.55}
-    *{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:1.25rem}header{display:flex;justify-content:space-between;gap:1rem;align-items:center}a{color:#126353}a:focus-visible{outline:3px solid #126353;outline-offset:3px}main{padding-top:2.5rem;padding-bottom:4rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;max-width:21ch}h2{line-height:1.2}.panel{background:white;border:1px solid #d8e2db;border-radius:14px;padding:1.5rem;margin:1.5rem 0}.next{background:#e9f3ec}.label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#517368}li{margin:.75rem 0}label{display:block;font-weight:650}textarea{display:block;width:100%;min-height:7rem;margin-top:.5rem;padding:.75rem;font:inherit;border:1px solid #8ba99d;border-radius:7px}.button{display:inline-block;background:#126353;color:white;padding:.8rem 1rem;border-radius:7px;text-decoration:none;font-weight:700}.button:hover{background:#0b493d}footer{border-top:1px solid #d8e2db;color:#425d55}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}}
+    *{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:1.25rem}header{display:flex;justify-content:space-between;gap:1rem;align-items:center}a{color:#126353}a:focus-visible,button:focus-visible{outline:3px solid #126353;outline-offset:3px}main{padding-top:2.5rem;padding-bottom:4rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;max-width:21ch}h2{line-height:1.2}.panel{background:white;border:1px solid #d8e2db;border-radius:14px;padding:1.5rem;margin:1.5rem 0}.next{background:#e9f3ec}.label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#517368}li{margin:.75rem 0}label{display:block;font-weight:650}textarea{display:block;width:100%;min-height:7rem;margin-top:.5rem;padding:.75rem;font:inherit;border:1px solid #8ba99d;border-radius:7px}.button,button{display:inline-block;background:#126353;color:white;padding:.8rem 1rem;border:0;border-radius:7px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer}.button:hover,button:hover{background:#0b493d}footer{border-top:1px solid #d8e2db;color:#425d55}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}}
   </style>
 </head>
 <body>
@@ -40,7 +40,9 @@
     <h2 id="notes-title">Keep one observation</h2>
     <label for="notes">Write the biggest mismatch you actually found, its current button destination, and one truthful change.</label>
     <textarea id="notes" placeholder="Observed: …&#10;Destination: …&#10;Smallest accurate fix: …"></textarea>
-    <p>Your notes stay in this browser tab; this page does not submit or save them. Copy them yourself before closing the tab.</p>
+    <p>Your notes stay in this browser tab; this page does not submit or save them. If you request help below, paste your observation alongside your public URL and desired visitor action.</p>
+    <button id="copy-notes" type="button">Copy my observation</button>
+    <p id="copy-status" role="status" aria-live="polite"></p>
   </section>
   <section class="panel next" aria-labelledby="next-title">
     <h2 id="next-title">Want help with the next draft?</h2>
@@ -52,5 +54,26 @@
   </section>
 </main>
 <footer>Free self-review resource. No conversion result is promised or implied.</footer>
+<script>
+  const notes = document.getElementById('notes');
+  const status = document.getElementById('copy-status');
+  document.getElementById('copy-notes').addEventListener('click', async () => {
+    const value = notes.value.trim();
+    if (!value) {
+      status.textContent = 'Write one observation first, then copy it.';
+      notes.focus();
+      return;
+    }
+    try {
+      if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(value);
+      status.textContent = 'Observation copied. Paste it into your own notes or request.';
+    } catch {
+      notes.focus();
+      notes.select();
+      status.textContent = 'Automatic copying is unavailable. The observation is selected; use your device’s Copy command.';
+    }
+  });
+</script>
 </body>
 </html>
