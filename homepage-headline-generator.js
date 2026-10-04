@@ -166,5 +166,35 @@
     note.dataset.state = "hint";
   });
 
+  document.querySelector("#share-tool").addEventListener("click", async () => {
+    const urlField = document.querySelector("#share-url");
+    const shareNote = document.querySelector("#share-note");
+    const fallback = document.querySelector("#share-fallback");
+    const url = urlField.value;
+    fallback.hidden = true;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "Free homepage headline generator", url });
+        shareNote.textContent = "Share sheet opened for the free tool link only.";
+        return;
+      } catch (error) {
+        if (error && error.name === "AbortError") {
+          shareNote.textContent = "Sharing canceled. Nothing was sent by this page.";
+          return;
+        }
+      }
+    }
+    try {
+      if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error("Clipboard unavailable");
+      await navigator.clipboard.writeText(url);
+      shareNote.textContent = "Free tool link copied. Share it only if you choose.";
+    } catch {
+      fallback.hidden = false;
+      urlField.focus();
+      urlField.select();
+      shareNote.textContent = "Automatic sharing is unavailable. The free tool link is selected; use your device's Copy command.";
+    }
+  });
+
   render();
 })();
